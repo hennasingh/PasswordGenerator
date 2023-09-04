@@ -1,0 +1,52 @@
+
+body {
+    background-color: #1C1C1C;
+}
+
+#main {
+    text-align: start;
+    margin:50px auto;
+    width: 500px;
+    height: 400px;
+    padding: 20px 40px;
+    background-color: #273549;
+  
+}
+
+#title {
+    color: white
+}
+
+#randomPassword {
+    color: #4ADF86;
+}
+#subtitle {
+    color: #D5D4D8;
+    margin-bottom: 50px;
+}
+
+#btn-password {
+    background: #10B981;
+    border: none;
+    color: white;
+    padding: 12px ;
+    border-radius: 4px;
+    font-size: 1rem;
+    margin-bottom: 30px;
+}
+hr {
+    background-color: #2F3E53;
+}
+
+.input {
+    color: #55F991;
+    background-color:#2F3E53 ;
+    padding: 14px 16px;
+    margin-top: 30px;
+    width:220px;
+    margin-left: 20px;
+    border-radius: 6px;
+    font-style: bold;
+    font-size: 1rem;
+    border: 1px solid #2F3E53;
+}
