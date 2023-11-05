@@ -3,7 +3,7 @@ body {
     background-color: #1C1C1C;
 }
 
-#main {
+.main {
     text-align: start;
     margin:50px auto;
     width: 500px;
@@ -13,19 +13,19 @@ body {
   
 }
 
-#title {
+.title {
     color: white
 }
 
-#randomPassword {
+.randomPassword {
     color: #4ADF86;
 }
-#subtitle {
+.subtitle {
     color: #D5D4D8;
     margin-bottom: 50px;
 }
 
-#btn-password {
+.btn-password {
     background: #10B981;
     border: none;
     color: white;
@@ -37,16 +37,43 @@ body {
 hr {
     background-color: #2F3E53;
 }
+.numDigits {
+    background-color:#2F3E53 ;
+    width: 40px;
+    height: 40px;
+    border: none;
+    margin-left: 20px;
+    padding: 4px 5px;
+    color: white;
+    text-align: center;
+}
 
 .input {
     color: #55F991;
     background-color:#2F3E53 ;
     padding: 14px 16px;
     margin-top: 30px;
-    width:220px;
+    width:35%;
+    display:inline-block;
     margin-left: 20px;
     border-radius: 6px;
     font-style: bold;
     font-size: 1rem;
     border: 1px solid #2F3E53;
+    cursor: pointer;
+}
+.input:hover {
+    border: 1px solid #D5D4D8;
+}
+
+.text-copied {
+    color: #10B981;
+    text-shadow: 1px 2px  #fff;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+}
+
+#notification {
+    display: none;
+    text-align: center;
 }

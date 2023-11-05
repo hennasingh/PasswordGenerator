@@ -9,22 +9,43 @@ let boxOne = document.getElementById("boxOne");
 let boxTwo = document.getElementById("boxTwo");
 
 function generatePassword() {
-    boxOne.value = getPassword();
-    boxTwo.value = getPassword()
+    const num = document.getElementById('numDigits').value
+    boxOne.textContent = getPassword(num)
+    boxTwo.textContent = getPassword(num)
 }
 
+function copyTextOne() {
+    if(boxOne.textContent && navigator.clipboard){
+        navigator.clipboard.writeText(boxOne.textContent)
+        notify()
+    }
+}
+
+function copyTextTwo() {
+    if(boxTwo.textContent && navigator.clipboard){
+        navigator.clipboard.writeText(boxTwo.textContent)
+        notify()
+    }
+}
+
+function notify() {
+    document.getElementById('notification').style.display = "block"
+    setTimeout(function() {
+        document.getElementById('notification').style.display = "none"
+    }, 1000)
+}
 function randomCharacter() {
 
     let index = Math.floor(Math.random() * characters.length)
 
-    return characters[index];
+    return characters[index]
 }
 
-function getPassword() {
+function getPassword(num) {
 
     let string = ""
-    for(let y = 0; y < 15; y++) {
-        string += randomCharacter();
+    for(let y = 0; y < num; y++) {
+        string += randomCharacter()
     }
     return string
     
